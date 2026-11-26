@@ -13,19 +13,3 @@ Salva il codice in un file chiamato `Start.java`, poi compila ed esegui da termi
 ```bash
 javac Start.java
 java Start
-```
-
-## Operazioni disponibili
-
-| Metodo | Operazione |
-|---|---|
-| `somma(a, b)` | Addizione |
-| `sottrai(a, b)` | Sottrazione |
-| `moltiplica(a, b)` | Moltiplicazione |
-| `dividi(a, b)` | Divisione |
-
-I metodi accettano numeri decimali (`double`) e restituiscono il risultato dell'operazione.
-
-## Nota
-
-La divisione per zero non è attualmente gestita; il controllo potrà essere aggiunto in seguito.
