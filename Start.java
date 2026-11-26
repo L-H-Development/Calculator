@@ -4,7 +4,12 @@ class Start {
         System.out.println("Somma: " + somma(5, 3));
         System.out.println("Sottrazione: " + sottrai(5, 3));
         System.out.println("Moltiplicazione: " + moltiplica(5, 3));
-        System.out.println("Divisione: " + dividi(6, 3));
+
+        try {
+            System.out.println("Divisione: " + dividi(6, 3));
+        } catch (IllegalArgumentException e) {
+            System.out.println("Errore: " + e.getMessage());
+        }
     }
 
     static double somma(double a, double b) {
@@ -20,6 +25,9 @@ class Start {
     }
 
     static double dividi(double a, double b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Non è possibile dividere per zero.");
+        }
         return a / b;
     }
 }
